@@ -62,8 +62,7 @@ export default function Root() {
           <main id="detail" className="content">
               <Outlet  />
             
-          </main>
-          
+          </main> 
         </section>
         <hr/>
         <img src={foot} ></img>
