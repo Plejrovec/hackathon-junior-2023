@@ -3,21 +3,21 @@ import {
   createBrowserRouter
 } from "react-router-dom";
 
-import Divadla from "./routes/KulturniAkce/Divadla";
-import Exkurze from "./routes/KulturniAkce/Exkurze";
-import Festivaly from "./routes/KulturniAkce/Festivaly";
-import Koncerty from "./routes/KulturniAkce/Koncerty";
-import Kurzy from "./routes/KulturniAkce/Kurzy";
+import Divadlo from "./routes/VsechnyAkce/Divadlo";
+import Film from "./routes/VsechnyAkce/Film";
+import Hudba from "./routes/VsechnyAkce/Hudba";
+import AKCE_TIC_Brno from "./routes/VsechnyAkce/AKCE_TIC_Brno";
+import Pro_rodiny from "./routes/VsechnyAkce/Pro_rodiny";
+import Veletrhy_vzdelavaci from "./routes/VsechnyAkce/Veletrhy_vzdelavaci";
+import Vystava from "./routes/VsechnyAkce/Vystava";
+import Nocni_zivot from "./routes/VsechnyAkce/Nocni_zivot";
 
-import Hry from "./routes/SpolecenskeAkce/Hry";
-import Ochutnavky from "./routes/SpolecenskeAkce/Ochutnavky";
-import Party from "./routes/SpolecenskeAkce/Party";
+import TOP_akce from "./routes/VsechnyAkce/TOP_akce";
+import Festivaly from "./routes/VsechnyAkce/Festivaly";
+import Gastronomicke from "./routes/VsechnyAkce/Gastronomicke";
 
-import Expedice from "./routes/TuristickeAkce/Expedice";
-import PesiVylety from "./routes/TuristickeAkce/PesiVylety";
-import Prochazky from "./routes/TuristickeAkce/Prochazky";
-import VysokohorskaTuristika from "./routes/TuristickeAkce/VysokohorskaTuristika";
 import Default from "./routes/default";
+
 
 const router = createBrowserRouter([
   {
@@ -29,52 +29,48 @@ const router = createBrowserRouter([
         element: <Default />,
       },
       {
-        path: "Divadla",
-        element: <Divadla />,
+        path: "Divadlo",
+        element: <Divadlo />,
       },
       {
-        path: "Koncerty",
-        element: <Koncerty />,
+        path: "Film",
+        element: <Film />,
+      },
+      {
+        path: "Hudba",
+        element: <Hudba />,
+      },
+      {
+        path: "AKCE_TIC_Brno",
+        element: <AKCE_TIC_Brno />,
+      },
+      {
+        path: "Pro_rodiny",
+        element: <Pro_rodiny />,
+      },
+      {
+        path: "Veletrhy_vzdelavaci",
+        element: <Veletrhy_vzdelavaci />,
+      },
+      {
+        path: "Vystava",
+        element: <Vystava />,
+      },
+      {
+        path: "Nocni_zivot",
+        element: <Nocni_zivot />,
+      },
+      {
+        path: "TOP_akce",
+        element: <TOP_akce />,
       },
       {
         path: "Festivaly",
         element: <Festivaly />,
       },
       {
-        path: "Exkurze",
-        element: <Exkurze />,
-      },
-      {
-        path: "Kurzy",
-        element: <Kurzy />,
-      },
-      {
-        path: "Hry",
-        element: <Hry />,
-      },
-      {
-        path: "Ochutnavky",
-        element: <Ochutnavky />,
-      },
-      {
-        path: "Party",
-        element: <Party />,
-      },
-      {
-        path: "Expedice",
-        element: <Expedice />,
-      },
-      {
-        path: "PesiVylety",
-        element: <PesiVylety />,
-      },
-      {
-        path: "Prochazky",
-        element: <Prochazky />,
-      },
-      {
-        path: "VysokohorskaTuristika",
-        element: <VysokohorskaTuristika />,
+        path: "Gastronomicke",
+        element: <Gastronomicke />,
       }
     ]
   },
