@@ -17,12 +17,17 @@ import Expedice from "./routes/TuristickeAkce/Expedice";
 import PesiVylety from "./routes/TuristickeAkce/PesiVylety";
 import Prochazky from "./routes/TuristickeAkce/Prochazky";
 import VysokohorskaTuristika from "./routes/TuristickeAkce/VysokohorskaTuristika";
+import Default from "./routes/default";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
     children: [
+      {
+        path: "/",
+        element: <Default />,
+      },
       {
         path: "Divadla",
         element: <Divadla />,

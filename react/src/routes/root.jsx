@@ -70,7 +70,8 @@ export default function Root() {
               <a className="back-arrow" href={"/"}>&#129044;</a>
           </aside>
           <main id="detail" class="content">
-              <Outlet />
+              <Outlet  />
+            
           </main>
         </section>
       </div>

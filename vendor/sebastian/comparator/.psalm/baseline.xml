@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="dev-master@">
+  <file src="src/ArrayComparator.php">
+    <TooManyArguments occurrences="1">
+      <code>assertEquals</code>
+    </TooManyArguments>
+  </file>
+  <file src="src/DOMNodeComparator.php">
+    <PossiblyNullPropertyAssignment occurrences="1">
+      <code>$document</code>
+    </PossiblyNullPropertyAssignment>
+    <PossiblyNullReference occurrences="1">
+      <code>normalizeDocument</code>
+    </PossiblyNullReference>
+  </file>
+  <file src="src/DateTimeComparator.php">
+    <UndefinedInterfaceMethod occurrences="3">
+      <code>setTimezone</code>
+      <code>setTimezone</code>
+      <code>setTimezone</code>
+    </UndefinedInterfaceMethod>
+  </file>
+</files>
