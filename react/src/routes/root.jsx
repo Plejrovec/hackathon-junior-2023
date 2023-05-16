@@ -71,7 +71,7 @@ export default function Root() {
           </aside>
           <main id="detail" class="content">
               <Outlet  />
-            <h1 className="mainname">Co se děje v Brně? Všechny akce pohodlně, levněji na jednom místě.</h1>
+            
           </main>
         </section>
       </div>
