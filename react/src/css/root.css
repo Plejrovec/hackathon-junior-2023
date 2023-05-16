@@ -76,6 +76,10 @@ body {
     color: #000;
 }
 
+.sidebar li a:hover{
+    text-decoration: underline;
+    
+}
 .content {
     flex: 3;
     background-color: #FFADF7;
