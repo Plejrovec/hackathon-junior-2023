@@ -45,6 +45,7 @@ body {
 
 .sidebar h1 {
     font-size: 2em;
+    margin: 0;
 }
 
 .sidebar nav{
@@ -76,7 +77,7 @@ body {
 }
 
 .content {
-    flex: 2;
+    flex: 3;
     background-color: #FFADF7;
 }
 
