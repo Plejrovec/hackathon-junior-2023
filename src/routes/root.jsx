@@ -28,7 +28,29 @@ export default function Root() {
             <p>Spolecenske akce</p>
             <ul>
               <li>
-                <a href={`divadla`}>Divadla</a>
+                <a href={`ochutnavky`}>Ochutnavky</a>
+              </li>
+              <li>
+                <a href={`hry`}>Hry</a>
+              </li>
+              <li>
+                <a href={`party`}>Party</a>
+              </li>
+            </ul>
+
+            <p>Turisticke akce</p>
+            <ul>
+              <li>
+                <a href={`pesiVylety`}>Pesi vylety</a>
+              </li>
+              <li>
+                <a href={`expedice`}>Expedice</a>
+              </li>
+              <li>
+                <a href={`prochazky`}>Prochazky</a>
+              </li>
+              <li>
+                <a href={`vysokohorskaTuristika`}>Vysokohorska turistika</a>
               </li>
             </ul>
           </nav>
