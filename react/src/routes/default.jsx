@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/default.css";
+import Event from "../components/Event"; 
 
 export default function Default() {
     return (
@@ -37,7 +38,9 @@ export default function Default() {
             </div>
            
             <div className="events">
-                <div className="event"></div>
+                <div className="event">
+                  <Event></Event>
+                </div>
             </div>
         </div>
     );
