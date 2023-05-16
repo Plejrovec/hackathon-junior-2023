@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
-
+import "../css/root.css"
 export default function Root() {
     return (
-      <>
-        <div id="sidebar">
+      <div  class="container">
+        <div id="sidebar" class="sidemenu">
           <h1>React Router</h1>
           <nav>
             <p>Kulturni akce</p>
@@ -55,9 +55,9 @@ export default function Root() {
             </ul>
           </nav>
         </div>
-        <div id="detail">
+        <div id="detail" class="tab">
             <Outlet />
         </div>
-      </>
+      </div>
     );
   }
