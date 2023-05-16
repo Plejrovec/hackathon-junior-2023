@@ -8,7 +8,7 @@ import Film from "./routes/VsechnyAkce/Film";
 import Hudba from "./routes/VsechnyAkce/Hudba";
 import AKCE_TIC_Brno from "./routes/VsechnyAkce/AKCE_TIC_Brno";
 import Pro_rodiny from "./routes/VsechnyAkce/Pro_rodiny";
-import Veletrhy_vzdelavaci from "./routes/VsechnyAkce/Veletrhy_vzdelavaci";
+import Veletrhy_a_vzdelavaci from "./routes/VsechnyAkce/Veletrhy_vzdelavaci";
 import Vystava from "./routes/VsechnyAkce/Vystava";
 import Nocni_zivot from "./routes/VsechnyAkce/Nocni_zivot";
 
@@ -49,8 +49,8 @@ const router = createBrowserRouter([
         element: <Pro_rodiny />,
       },
       {
-        path: "Veletrhy_vzdelavaci",
-        element: <Veletrhy_vzdelavaci />,
+        path: "Veletrhy_a_vzdelavaci",
+        element: <Veletrhy_a_vzdelavaci />,
       },
       {
         path: "Vystava",

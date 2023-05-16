@@ -26,7 +26,7 @@ export default function Root() {
                   <a href={`pro_rodiny`}>Pro rodiny</a>
                 </li>
                 <li>
-                  <a href={`veletrhy/vzdelavaci`}>Veletrhy/vzdelavaci</a>
+                  <a href={`veletrhy_a_vzdelavaci`}>Veletrhy_a_vzdelavaci</a>
                 </li>
                 <li>
                   <a href={`vystava`}>Vystava</a>
