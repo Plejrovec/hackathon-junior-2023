@@ -9,53 +9,42 @@ export default function Root() {
           <aside  className="sidebar">
             
              <h2>Akce V Brně</h2>
-              <p>Kulturni akce</p>
               <ul >
                 <li>
-                  <a href={`divadla`}>Divadla</a>
+                  <a href={`divadlo`}>Divadlo</a>
                 </li>
                 <li>
-                  <a href={`koncerty`}>Koncerty</a>
+                  <a href={`film`}>Film</a>
+                </li>
+                <li>
+                  <a href={`hudba`}>Hudba</a>
+                </li>
+                <li>
+                  <a href={`akce_tic_brno`}>Akce TIC Brno</a>
+                </li>
+                <li>
+                  <a href={`pro_rodiny`}>Pro rodiny</a>
+                </li>
+                <li>
+                  <a href={`veletrhy/vzdelavaci`}>Veletrhy/vzdelavaci</a>
+                </li>
+                <li>
+                  <a href={`vystava`}>Vystava</a>
+                </li>
+                <li>
+                  <a href={`nocni_zivot`}>Nocni zivot</a>
+                </li>
+                <li>
+                  <a href={`top_akce`}>TOP akce</a>
                 </li>
                 <li>
                   <a href={`festivaly`}>Festivaly</a>
                 </li>
                 <li>
-                  <a href={`exkurze`}>Exkurze</a>
-                </li>
-                <li>
-                  <a href={`kurzy`}>Kurzy</a>
+                  <a href={`Gastronomicke`}>Gastronomicke</a>
                 </li>
               </ul>
 
-              <p>Spolecenske akce</p>
-              <ul>
-                <li>
-                  <a href={`ochutnavky`}>Ochutnavky</a>
-                </li>
-                <li>
-                  <a href={`hry`}>Hry</a>
-                </li>
-                <li>
-                  <a href={`party`}>Party</a>
-                </li>
-              </ul>
-
-              <p>Turisticke akce</p>
-              <ul>
-                <li>
-                  <a href={`pesiVylety`}>Pesi vylety</a>
-                </li>
-                <li>
-                  <a href={`expedice`}>Expedice</a>
-                </li>
-                <li>
-                  <a href={`prochazky`}>Prochazky</a>
-                </li>
-                <li>
-                  <a href={`vysokohorskaTuristika`}>Vysokohorska turistika</a>
-                </li>
-              </ul>
 
               <p>Obecné</p>
               <ul>
