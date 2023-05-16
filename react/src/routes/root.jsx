@@ -12,7 +12,7 @@ export default function Root() {
              <h2>Akce V Brně</h2>
               <ul>
                 <li>
-                  <a href={`vsechnyakce`}>Všechny akce</a>
+                  <a href={`/`}>Všechny akce</a>
                 </li>
                 <li>
                   <a href={`divadlo`}>Divadlo</a>
@@ -33,7 +33,7 @@ export default function Root() {
                   <a href={`veletrhy_a_vzdelavaci`}>Veletrhy a vzdělávací akce</a>
                 </li>
                 <li>
-                  <a href={`vystava`}>Vystava</a>
+                  <a href={`vystava`}>Výstava</a>
                 </li>
                 <li>
                   <a href={`nocni_zivot`}>Noční život</a>
