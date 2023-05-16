@@ -25,3 +25,11 @@
     position: relative;
     width: 66.666666667%;
 }
+ul{list-style: none;}
+ul a:hover{
+    text-decoration: underline;
+}
+ul a{ 
+    color:black;
+    text-decoration: none;
+}

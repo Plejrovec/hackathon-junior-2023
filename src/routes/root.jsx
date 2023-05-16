@@ -7,20 +7,20 @@ export default function Root() {
           <h1>React Router</h1>
           <nav>
             <p>Kulturni akce</p>
-            <ul>
-              <li>
+            <ul >
+              <li class="links">
                 <a href={`divadla`}>Divadla</a>
               </li>
-              <li>
+              <li class="links">
                 <a href={`koncerty`}>Koncerty</a>
               </li>
-              <li>
+              <li class="links">
                 <a href={`festivaly`}>Festivaly</a>
               </li>
-              <li>
+              <li class="links">
                 <a href={`exkurze`}>Exkurze</a>
               </li>
-              <li>
+              <li class="links">
                 <a href={`kurzy`}>Kurzy</a>
               </li>
             </ul>
