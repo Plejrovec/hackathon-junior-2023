@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import "../css/root.css"
 import nav from "../imgs/navbar.png"
+import foot from "../imgs/footer.png"
 export default function Root() {
     return (
       <div className="container">
@@ -62,7 +63,10 @@ export default function Root() {
               <Outlet  />
             
           </main>
+          
         </section>
+        <hr/>
+        <img src={foot} ></img>
       </div>
     );
   }
