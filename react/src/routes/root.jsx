@@ -10,7 +10,10 @@ export default function Root() {
           <aside  className="sidebar">
             
              <h2>Akce V Brně</h2>
-              <ul >
+              <ul>
+                <li>
+                  <a href={`vsechnyakce`}>Všechny akce</a>
+                </li>
                 <li>
                   <a href={`divadlo`}>Divadlo</a>
                 </li>
@@ -27,13 +30,13 @@ export default function Root() {
                   <a href={`pro_rodiny`}>Pro rodiny</a>
                 </li>
                 <li>
-                  <a href={`veletrhy_a_vzdelavaci`}>Veletrhy_a_vzdelavaci</a>
+                  <a href={`veletrhy_a_vzdelavaci`}>Veletrhy a vzdělávací akce</a>
                 </li>
                 <li>
                   <a href={`vystava`}>Vystava</a>
                 </li>
                 <li>
-                  <a href={`nocni_zivot`}>Nocni zivot</a>
+                  <a href={`nocni_zivot`}>Noční život</a>
                 </li>
                 <li>
                   <a href={`top_akce`}>TOP akce</a>
@@ -42,7 +45,7 @@ export default function Root() {
                   <a href={`festivaly`}>Festivaly</a>
                 </li>
                 <li>
-                  <a href={`Gastronomicke`}>Gastronomicke</a>
+                  <a href={`Gastronomicke`}>Gastronomické akce</a>
                 </li>
               </ul>
 
