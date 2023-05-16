@@ -22,7 +22,7 @@ class DataTest extends TestCase
 
     public function test_RouteForData()
     {
-        $response = $this->get('/api/example');
+        $response = $this->get('/api/events');
         dd($response);
         // Add more assertions as needed
     }
