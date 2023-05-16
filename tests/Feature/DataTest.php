@@ -12,11 +12,18 @@ class DataTest extends TestCase
     /**
      * A basic feature test example.
      */
-    public function test_example(): void
+    public function test_AkceData(): void
     {
         $akceData = new AkceData();
         $yo = $akceData->GetAkceData();
 
         dd($yo);
+    }
+
+    public function test_RouteForData()
+    {
+        $response = $this->get('/api/example');
+        dd($response);
+        // Add more assertions as needed
     }
 }
