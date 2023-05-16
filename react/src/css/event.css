@@ -48,3 +48,6 @@
     margin:1rem;
    
 }
+.event .date, .location{
+    text-align: center;
+}
