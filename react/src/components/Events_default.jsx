@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../css/event.css"
+import arrow from "../imgs/arrow.png"
 
 const Event = () => {
   const [eventData, setEventData] = useState([]);
@@ -63,16 +64,20 @@ const Event = () => {
     <>
       {eventData.map((event) => (
         <div className="event" key={event.ID}>
+          <div className="items">
           <img src={event.image} alt="" />
           <div className="right">
             <div className="top">
               <p dangerouslySetInnerHTML={{ __html: event.name }}></p>
-              <button>Vstupenky</button>
+              <button className="btn">Vstupenky<img src={arrow} className="arrow"></img></button>
             </div>
+           
+            
             <div className="bottom">
               <div className="date">{event.date_from + " " + event.date_to}</div>
               <div className="location">{event.location}</div>
             </div>
+          </div>
           </div>
         </div>
       ))}
