@@ -70,7 +70,8 @@ export default function Root() {
               <a className="back-arrow" href={"/"}>&#129044;</a>
           </aside>
           <main id="detail" class="content">
-              <Outlet />
+              <Outlet  />
+            <h1 className="mainname">Co se děje v Brně? Všechny akce pohodlně, levněji na jednom místě.</h1>
           </main>
         </section>
       </div>
