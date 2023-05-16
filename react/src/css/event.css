@@ -1,0 +1,25 @@
+.event{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
+.event img{
+    width:15%;
+    height:20%;
+}
+.event .right{
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+}
+.event .top{
+    display:flex;
+    flex-direction:row ;
+}
+.event button{
+    border: 10px black;
+    font-weight: bold;
+}
+.event p{
+    font-weight: bold;
+}
