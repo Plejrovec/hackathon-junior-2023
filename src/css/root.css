@@ -26,7 +26,7 @@ body {
 
 
 .main-content {
-    height: 100vh;
+    height: 115vh;
     display: flex;
     flex-direction: row;
     padding: 0 2.5rem;
@@ -80,7 +80,14 @@ body {
     flex: 3;
     background-color: #FFADF7;
 }
-
+.lock{
+    text-decoration: none;
+    color: black    ;
+    
+    width:.7rem;
+    
+    
+}
 .back-arrow {
     text-decoration: none;
     color: black    ;
