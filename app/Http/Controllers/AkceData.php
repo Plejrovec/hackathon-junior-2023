@@ -22,12 +22,12 @@ class AkceData extends Controller
             $d['categories'] = $words[0];
 
             $timestamp = $d['date_from'] / 1000;
-            $date = date('Y-m-d H:i:s', strtotime('@' . $timestamp));
+            $date = date('Y-m-d', strtotime('@' . $timestamp));
 
             $d['date_from'] = $date;
 
             $timestamp = $d['date_to'] / 1000;
-            $date = date('Y-m-d H:i:s', strtotime('@' . $timestamp));
+            $date = date('Y-m-d', strtotime('@' . $timestamp));
 
             $d['date_to'] = $date;
 
@@ -37,157 +37,79 @@ class AkceData extends Controller
         return $myArray;
     }
 
-    public function GetDivadla() {
-        $ar = $this->GetAkceData();
-
-        $myArray = array();
-
+    public function FilterBy($string, $ar) {
         for ($i = 0; $i < Count($ar); $i++) {
-            if ($ar[$i]['categories'] == "Divadlo") {
+            if ($ar[$i]['categories'] == $string) {
                 $myArray[] = $ar[$i];
             }
         }
 
         return $myArray;
+    }
+
+    public function GetDivadla() {
+        $ar = $this->GetAkceData();
+
+        return $this->FilterBy("Divadlo", $ar);;
     }
 
     public function GetFilm() {
         $ar = $this->GetAkceData();
 
-        $myArray = array();
-
-        for ($i = 0; $i < Count($ar); $i++) {
-            if ($ar[$i]['categories'] == "Film") {
-                $myArray[] = $ar[$i];
-            }
-        }
-        
-        return $myArray;
+        return $this->FilterBy("Film", $ar);;
     }
 
     public function GetHudba() {
         $ar = $this->GetAkceData();
 
-        $myArray = array();
-
-        for ($i = 0; $i < Count($ar); $i++) {
-            if ($ar[$i]['categories'] == "Hudba") {
-                $myArray[] = $ar[$i];
-            }
-        }
-        
-        return $myArray;
+        return $this->FilterBy("Hudba", $ar);;
     }
 
     public function GetTIC() {
         $ar = $this->GetAkceData();
 
-        $myArray = array();
-
-        for ($i = 0; $i < Count($ar); $i++) {
-            if ($ar[$i]['categories'] == "Akce TIC Brno") {
-                $myArray[] = $ar[$i];
-            }
-        }
-        
-        return $myArray;
+        return $this->FilterBy("Akce TIC Brno", $ar);;
     }
 
     public function GetProRodiny() {
         $ar = $this->GetAkceData();
 
-        $myArray = array();
-
-        for ($i = 0; $i < Count($ar); $i++) {
-            if ($ar[$i]['categories'] == "Pro rodiny") {
-                $myArray[] = $ar[$i];
-            }
-        }
-        
-        return $myArray;
+        return $this->FilterBy("Pro rodiny", $ar);;
     }
 
     public function GetVeletrhy() {
         $ar = $this->GetAkceData();
 
-        $myArray = array();
-
-        for ($i = 0; $i < Count($ar); $i++) {
-            if ($ar[$i]['categories'] == "Veletrhy / vzdělávací") {
-                $myArray[] = $ar[$i];
-            }
-        }
-        
-        return $myArray;
+        return $this->FilterBy("Veletrhy / vzdělávací", $ar);
     }
 
     public function GetVystavy() {
         $ar = $this->GetAkceData();
 
-        $myArray = array();
-
-        for ($i = 0; $i < Count($ar); $i++) {
-            if ($ar[$i]['categories'] == "Výstava") {
-                $myArray[] = $ar[$i];
-            }
-        }
-        
-        return $myArray;
+        return $this->FilterBy("Výstava", $ar);;
     }
 
     public function GetNocniZivot() {
         $ar = $this->GetAkceData();
 
-        $myArray = array();
-
-        for ($i = 0; $i < Count($ar); $i++) {
-            if ($ar[$i]['categories'] == "Noční život") {
-                $myArray[] = $ar[$i];
-            }
-        }
-        
-        return $myArray;
+        return $this->FilterBy("Noční život", $ar);
     }
 
     public function GetTOP() {
         $ar = $this->GetAkceData();
 
-        $myArray = array();
-
-        for ($i = 0; $i < Count($ar); $i++) {
-            if ($ar[$i]['categories'] == "TOP akce") {
-                $myArray[] = $ar[$i];
-            }
-        }
-        
-        return $myArray;
+        return $this->FilterBy("TOP akce", $ar);
     }
 
     public function GetFestivaly() {
         $ar = $this->GetAkceData();
 
-        $myArray = array();
-
-        for ($i = 0; $i < Count($ar); $i++) {
-            if ($ar[$i]['categories'] == "Festivaly") {
-                $myArray[] = $ar[$i];
-            }
-        }
-        
-        return $myArray;
+        return $this->FilterBy("Festivaly", $ar);;
     }
 
     public function GetGastronomicke() {
         $ar = $this->GetAkceData();
 
-        $myArray = array();
-
-        for ($i = 0; $i < Count($ar); $i++) {
-            if ($ar[$i]['categories'] == "Gastronomické") {
-                $myArray[] = $ar[$i];
-            }
-        }
-        
-        return $myArray;
+        return $this->FilterBy("Gastronomické", $ar);;
     }
 }
