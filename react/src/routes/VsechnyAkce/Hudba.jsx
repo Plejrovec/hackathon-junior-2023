@@ -2,6 +2,10 @@ import React from 'react'
 
 export default function Hudba() {
   return (
-    <div>Hudba</div>
+    <div class="container">
+      <h1>
+        Co se děje v Brně? Všechny akce pohodlně, levněji na jednom místě.
+      </h1> 
+    </div>
   )
 }
