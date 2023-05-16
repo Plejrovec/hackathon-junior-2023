@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Divadla() {
+export default function Divadlo() {
   return (
     <div>divadla1</div>
   )
