@@ -8,7 +8,7 @@ export default function Root() {
         <section className="main-content">
           <aside  className="sidebar">
             
-             <h1>Akce V Brně</h1>
+             <h2>Akce V Brně</h2>
               <p>Kulturni akce</p>
               <ul >
                 <li>
@@ -69,7 +69,7 @@ export default function Root() {
               
               <a className="back-arrow" href={"/"}>&#129044;</a>
           </aside>
-          <main id="detail" class="content">
+          <main id="detail" className="content">
               <Outlet  />
             
           </main>

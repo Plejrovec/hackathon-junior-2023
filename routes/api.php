@@ -14,7 +14,7 @@ use App\Http\Controllers\AkceData;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-Route::get('/example', [AkceData::class, 'GetAkceData']);
+Route::post('api/events', [AkceData::class, 'GetAkceData']);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
