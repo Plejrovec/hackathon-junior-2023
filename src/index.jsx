@@ -6,7 +6,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
-import Divadla from "./routes/divadla";
+import Divadla from "./routes/KulturniAkce/Divadla";
+import Exkurze from "./routes/KulturniAkce/Exkurze";
+import Festivaly from "./routes/KulturniAkce/Festivaly";
+import Koncerty from "./routes/KulturniAkce/Koncerty";
+import Kurzy from "./routes/KulturniAkce/Kurzy";
 
 const router = createBrowserRouter([
   {
@@ -14,8 +18,24 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       {
-        path: "divadla",
+        path: "Divadla",
         element: <Divadla />,
+      },
+      {
+        path: "Koncerty",
+        element: <Koncerty />,
+      },
+      {
+        path: "Festivaly",
+        element: <Festivaly />,
+      },
+      {
+        path: "Exkurze",
+        element: <Exkurze />,
+      },
+      {
+        path: "Kurzy",
+        element: <Kurzy />,
       }
     ]
   },
