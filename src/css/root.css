@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700;800&display=swap');
+*{
+    font-family: 'Rubik',sans-serif;
+}
+.container{
+    max-width: 2000px;
+    width: 100%;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction: row;
+}
+.sidemenu{
+    width:33.33333333%;
+    min-height: 850px;
+    padding:30px;
+    font-size: 14px;
+    position: relative;
+    z-index:10;
+    color:black;
+    background-color: #F32BDF;
+}
+.tab{
+    background-color: #FFADF7 ;
+    position: relative;
+    width: 66.666666667%;
+}
