@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import EvStrip from "./EvStrip";
 import EventCard from "./EventCard";
 
 export default function Event(props){
@@ -44,9 +43,11 @@ export default function Event(props){
   }, [eventData]);
 
   const filteredEvents = eventData.filter((event) =>
-  event.name.toLowerCase().includes(searchQuery.toLowerCase())
+  event.name.toLowerCase().includes(props.searchQuery.toLowerCase())
 );
-
+  if(props.searchQuery!= "" ) {
+    filteredEvents.map(event => console.log(event));
+  }
   return (
     <>
       {eventData.filter((event) => event.categories === props.filter).map((event) => (
