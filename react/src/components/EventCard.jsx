@@ -1,7 +1,7 @@
 import React from 'react';
 import arrow from "../imgs/arrow.png";
 import "../css/eventcard.css";
-export default function EventCard(event) {
+export default function EventCard(props) {
     console.log(props.event);
     return (
       <div className="event" key={props.event.ID}>
