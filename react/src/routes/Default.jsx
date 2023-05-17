@@ -1,9 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import "../css/default.css";
 import Event from "../components/EventList"; 
 import arrow from "../imgs/arrow.png";
 
 export default function Default() {
+    const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearch = (query) => {
+    setSearchQuery(query);
+  };
     return (
         <div className="container">
             <h1>
@@ -35,7 +40,7 @@ export default function Default() {
                         type="search"
                         name="search"
                         placeholder="Vyhledej si akci"
-                    />
+                    onSearch={handleSearch}/>
                 </div>
             </div>
             <div className="top-text">
@@ -46,7 +51,7 @@ export default function Default() {
             </div>
            
             <div className="events">
-                  <Event filter={"all"}></Event>
+                  <Event filter={"all"} searchQuery={searchQuery}></Event>
             </div>
         </div>
     );
