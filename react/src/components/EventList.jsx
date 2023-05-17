@@ -41,7 +41,7 @@ export default function Event(props){
 
     updateEventLocations();
   }, [eventData]);
-
+  console.log(props.searchQuery)
   const filteredEvents = eventData.filter((event) =>
   event.name.toLowerCase().includes(props.searchQuery.toLowerCase())
 );
