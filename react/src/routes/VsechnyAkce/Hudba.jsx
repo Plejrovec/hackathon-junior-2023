@@ -11,7 +11,7 @@ export default function Hudba() {
   return (
     <div class="container">
       <h1>
-        Co se děje v Brně? Všechny hudební akce pohodlně, levněji na jednom místě.
+        Co se děje v JMK? Všechny hudební akce pohodlně, levněji na jednom místě.
       </h1> 
      <SearchBar onSearch={handleSearch}></SearchBar>
             <div className="events">

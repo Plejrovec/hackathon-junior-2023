@@ -9,7 +9,7 @@ export default function Root() {
         <section className="main-content">
           <aside  className="sidebar">
             
-             <h2>Akce V Brně</h2>
+             <h2>Akce v JMK</h2>
               <ul>
                 <li>
                   <a href={`/`}>Všechny akce</a>

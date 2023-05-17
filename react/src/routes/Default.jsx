@@ -12,7 +12,7 @@ export default function Default() {
     return (
         <div className="container">
             <h1>
-                Co se děje v Brně? Všechny akce pohodlně, levněji na jednom
+                Co se děje v JMK? Všechny akce pohodlně, levněji na jednom
                 místě.
             </h1>
             <div >
@@ -45,7 +45,7 @@ export default function Default() {
             </div>
             <div className="top-text">
             <p>
-                Levnější vstupy <br /> Všechny akce v Brně pohromadě <br />{" "}
+                Levnější vstupy <br /> Všechny akce v JMK pohromadě <br />{" "}
                 Žádné zdlouhavé fronty na papírové vstupenky
             </p>
             </div>

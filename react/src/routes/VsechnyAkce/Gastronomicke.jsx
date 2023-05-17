@@ -11,7 +11,7 @@ export default function Gastronomicke() {
   return (
     <div class="container">
       <h1>
-        Co se děje v Brně? Všechny gastronomicke akce pohodlně, levněji na jednom místě.
+        Co se děje v JMK? Všechny gastronomicke akce pohodlně, levněji na jednom místě.
       </h1> 
         <SearchBar onSearch={handleSearch}></SearchBar>
             <div className="events">

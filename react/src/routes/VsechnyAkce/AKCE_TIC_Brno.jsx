@@ -11,7 +11,7 @@ export default function AKCE_TIC_Brno() {
   return (
     <div class="container">
       <h1>
-        Co se děje v Brně? Všechny akce turistického informačního centra v Brně pohodlně, levněji na jednom místě.
+        Co se děje v JMK? Všechny akce turistického informačního centra v Brně pohodlně, levněji na jednom místě.
       </h1> 
           <SearchBar onSearch={handleSearch}></SearchBar>
             <div className="events">

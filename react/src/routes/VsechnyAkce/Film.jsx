@@ -11,7 +11,7 @@ export default function Film() {
   return (
     <div class="container">
       <h1>
-        Co se děje v Brně? Všechna filmová protání pohodlně, levněji na jednom místě.
+        Co se děje v JMK? Všechna filmová protání pohodlně, levněji na jednom místě.
       </h1> 
 <SearchBar onSearch={handleSearch}></SearchBar>
             <div className="events">
