@@ -1,0 +1,32 @@
+.form{
+    width:30rem;
+    height:25rem;
+    border:2px solid black;
+    margin:0 5rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:20rem;
+    
+}
+h2{
+    margin-left:33rem;
+    margin-top:5rem;
+}
+
+
+input{
+    margin:1rem;
+    width:25rem;
+    height:1.5rem;
+    border-color: black;
+}
+.sbt{
+    width:5rem;
+    text-decoration:none;
+    color:black;
+    text-align:center;
+    height:2rem;
+    background-color: red;
+    border: 2px solid black;
+}
