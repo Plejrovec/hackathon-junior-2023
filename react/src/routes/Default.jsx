@@ -38,9 +38,7 @@ export default function Default() {
             </div>
            
             <div className="events">
-                <div className="event">
-                  <Event></Event>
-                </div>
+                  <Event filter={"all"}></Event>
             </div>
         </div>
     );

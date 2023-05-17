@@ -1,4 +1,5 @@
 import React from 'react'
+import Event from '../../components/Events_default'
 
 export default function AKCE_TIC_Brno() {
   return (
@@ -32,6 +33,9 @@ export default function AKCE_TIC_Brno() {
                 Levnější vstupy <br /> Všechny TIC akce v Brně pohromadě <br />{" "}
                 Žádné zdlouhavé fronty na papírové vstupenky
             </p>
+            </div>
+            <div className="events">
+                  <Event filter={"Akce TIC Brno"}></Event>
             </div>
     </div>
   )

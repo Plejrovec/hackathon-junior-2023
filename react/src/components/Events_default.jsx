@@ -3,16 +3,15 @@ import axios from "axios";
 import "../css/event.css"
 import arrow from "../imgs/arrow.png"
 
-const Event = () => {
+export default function Event(props){
   const [eventData, setEventData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get("http://localhost:8000/api/events");
-        const data = response.data.flat(Infinity).slice(0, 3);
+        const data = response.data.flat(Infinity)
         setEventData(data);
-        console.log(data);
       } catch (error) {
         console.error(error);
       }
@@ -20,6 +19,9 @@ const Event = () => {
 
     fetchData();
   }, []);
+
+
+
 
   const fetchLocation = async (latitude, longitude) => {
     try {
@@ -62,7 +64,7 @@ const Event = () => {
 
   return (
     <>
-      {eventData.map((event) => (
+      {eventData.filter((event) => event.categories === props.filter).map((event) => (
         <div className="event" key={event.ID}>
           <div className="items">
           <img src={event.image} alt="" />
@@ -71,8 +73,7 @@ const Event = () => {
               <p dangerouslySetInnerHTML={{ __html: event.name }}></p>
               <button className="btn">Vstupenky<img src={arrow} className="arrow"></img></button>
             </div>
-           
-            
+
             <div className="bottom">
               <div className="date">{event.date_from + " " + event.date_to}</div>
               <div className="location">{event.location}</div>
@@ -85,4 +86,4 @@ const Event = () => {
   );
 };
 
-export default Event;
+

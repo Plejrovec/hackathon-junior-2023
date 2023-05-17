@@ -1,4 +1,5 @@
 import React from 'react'
+import Event from '../../components/Events_default'
 
 export default function Hudba() {
   return (
@@ -32,6 +33,9 @@ export default function Hudba() {
                 Levnější vstupy <br /> Všechny hudební akce v Brně pohromadě <br />{" "}
                 Spousta skvělé muziky, žádné fronty na papírové lístky
             </p>
+            </div>
+            <div className="events">
+                  <Event filter={"Hudba"}></Event>
             </div>
     </div>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import Event from '../../components/Events_default'
 
 export default function Vystava() {
   return (
@@ -32,6 +33,9 @@ export default function Vystava() {
                 Levnější vstupy <br /> Všechny výstavy v Brně pohromadě <br />{" "}
                 Žádné zdlouhavé fronty na papírové vstupenky, více času
             </p>
+            </div>
+            <div className="events">
+                  <Event filter={"Výstava"}></Event>
             </div>
     </div>
   )
