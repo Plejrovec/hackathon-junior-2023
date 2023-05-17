@@ -1,5 +1,5 @@
 import React from 'react';
-import arrow from "../imgs/arrow.png";
+
 import "../css/eventcard.css";
 export default function EventCard(props) {
     console.log(props.event);
