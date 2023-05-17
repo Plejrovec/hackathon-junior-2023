@@ -1,5 +1,5 @@
 import React from 'react'
-import Event from '../../components/Events_default'
+import Event from '../../components/EventList'
 
 export default function Festivaly() {
   return (

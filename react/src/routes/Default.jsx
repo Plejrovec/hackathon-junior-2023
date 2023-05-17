@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/default.css";
-import Event from "../components/Events_default"; 
+import Event from "../components/EventList"; 
 
 export default function Default() {
     return (

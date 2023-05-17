@@ -1,0 +1,48 @@
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #F32BDF;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+.searchbar .form-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 15%;
+}
+
+.form-group input {
+    border: 2px solid black;
+    padding: .3rem;
+}
+
+.form-group input:focus {
+    outline: none;
+}
+
+input[type="date"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+
+.form-group.search {
+    width: 30%;
+}
+
+.form-group button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    bottom: 0;
+    right: .1rem;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+.form-group button svg {
+    height: 1.5rem;
+}

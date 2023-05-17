@@ -7,6 +7,7 @@ export default function Event(props){
   const [eventData, setEventData] = useState([]);
 
   useEffect(() => {
+    console.log("ne");
     const fetchData = async () => {
       try {
         const response = await axios.get("http://localhost:8000/api/events");
@@ -23,7 +24,7 @@ export default function Event(props){
 
 
 
-  const fetchLocation = async (latitude, longitude) => {
+  const fetchLocation = async(latitude, longitude) => {
     try {
       const apiKey = "AIzaSyAK7PSYID6RF8xxyKp6n4PX80vuqArD_QA"; // Replace with your Google Maps Geocoding API key
 
@@ -42,6 +43,7 @@ export default function Event(props){
   };
 
   useEffect(() => {
+    console.log("hey")
     const updateEventLocations = async () => {
       const updatedEventData = await Promise.all(
         eventData.map(async (event) => {
@@ -73,7 +75,7 @@ export default function Event(props){
               <p dangerouslySetInnerHTML={{ __html: event.name }}></p>
               <button className="btn">Vstupenky<img src={arrow} className="arrow"></img></button>
             </div>
-
+            
             <div className="bottom">
               <div className="date">{event.date_from + " " + event.date_to}</div>
               <div className="location">{event.location}</div>
