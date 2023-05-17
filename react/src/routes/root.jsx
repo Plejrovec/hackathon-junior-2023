@@ -4,7 +4,7 @@ import nav from "../imgs/navbar.png"
 import foot from "../imgs/footer.png"
 export default function Root() {
     return (
-      <div className="container">
+      <div className="main">
         <img src={nav} ></img>
         <section className="main-content">
           <aside  className="sidebar">
