@@ -29,8 +29,8 @@ export default function Veletrhy_vzdelavaci() {
             </div>
             <div className="top-text">
             <p>
-                Levnější vstupy <br /> Všechny akce v Brně pohromadě <br />{" "}
-                Žádné zdlouhavé fronty na papírové vstupenky
+                Levnější vstupy <br /> Všechny vzdělavací akce a veletrhy v Brně pohromadě <br />{" "}
+                Žádné zdlouhavé fronty na papírové vstupenky, více času na prohlídky
             </p>
             </div>
     </div>

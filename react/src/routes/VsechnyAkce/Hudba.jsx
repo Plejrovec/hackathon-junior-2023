@@ -29,8 +29,8 @@ export default function Hudba() {
             </div>
             <div className="top-text">
             <p>
-                Levnější vstupy <br /> Všechny akce v Brně pohromadě <br />{" "}
-                Žádné zdlouhavé fronty na papírové vstupenky
+                Levnější vstupy <br /> Všechny hudební akce v Brně pohromadě <br />{" "}
+                Spousta skvělé muziky, žádné fronty na papírové lístky
             </p>
             </div>
     </div>

@@ -29,8 +29,8 @@ export default function Nocni_zivot() {
             </div>
             <div className="top-text">
             <p>
-                Levnější vstupy <br /> Všechny akce v Brně pohromadě <br />{" "}
-                Žádné zdlouhavé fronty na papírové vstupenky
+                Levnější vstupy <br /> Všechny noční akce v Brně pohromadě <br />{" "}
+                Spousta dobrodružství a zábavy
             </p>
             </div>
     </div>

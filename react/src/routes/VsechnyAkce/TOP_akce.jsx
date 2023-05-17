@@ -29,7 +29,7 @@ export default function TOP_akce() {
             </div>
             <div className="top-text">
             <p>
-                Levnější vstupy <br /> Všechny akce v Brně pohromadě <br />{" "}
+                Levnější vstupy <br /> Všechny TOP akce v Brně pohromadě <br />{" "}
                 Žádné zdlouhavé fronty na papírové vstupenky
             </p>
             </div>

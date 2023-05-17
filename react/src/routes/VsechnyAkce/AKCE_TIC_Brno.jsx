@@ -29,7 +29,7 @@ export default function AKCE_TIC_Brno() {
             </div>
             <div className="top-text">
             <p>
-                Levnější vstupy <br /> Všechny akce v Brně pohromadě <br />{" "}
+                Levnější vstupy <br /> Všechny TIC akce v Brně pohromadě <br />{" "}
                 Žádné zdlouhavé fronty na papírové vstupenky
             </p>
             </div>

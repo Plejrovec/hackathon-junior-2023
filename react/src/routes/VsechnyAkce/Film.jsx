@@ -4,7 +4,7 @@ export default function Film() {
   return (
     <div class="container">
       <h1>
-        Co se děje v Brně? Všechny filmová protání pohodlně, levněji na jednom místě.
+        Co se děje v Brně? Všechna filmová protání pohodlně, levněji na jednom místě.
       </h1> 
       <div className="top-bar">
                 <h3>Výhody</h3>
@@ -29,7 +29,7 @@ export default function Film() {
             </div>
             <div className="top-text">
             <p>
-                Levnější vstupy <br /> Všechny akce v Brně pohromadě <br />{" "}
+                Levnější lístky<br /> Všechna filmová promítaní v Brně pohromadě <br />{" "}
                 Žádné zdlouhavé fronty na papírové vstupenky
             </p>
             </div>

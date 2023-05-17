@@ -29,8 +29,8 @@ export default function Vystava() {
             </div>
             <div className="top-text">
             <p>
-                Levnější vstupy <br /> Všechny akce v Brně pohromadě <br />{" "}
-                Žádné zdlouhavé fronty na papírové vstupenky
+                Levnější vstupy <br /> Všechny výstavy v Brně pohromadě <br />{" "}
+                Žádné zdlouhavé fronty na papírové vstupenky, více času
             </p>
             </div>
     </div>

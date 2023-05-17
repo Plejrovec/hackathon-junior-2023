@@ -29,8 +29,8 @@ export default function Pro_rodiny() {
             </div>
             <div className="top-text">
             <p>
-                Levnější vstupy <br /> Všechny akce v Brně pohromadě <br />{" "}
-                Žádné zdlouhavé fronty na papírové vstupenky
+                Levnější vstupy <br /> Všechny akce pro rodiny v Brně pohromadě <br />{" "}
+                Žádné úmorné čekání s dětmi ve frontách
             </p>
             </div>
     </div>
