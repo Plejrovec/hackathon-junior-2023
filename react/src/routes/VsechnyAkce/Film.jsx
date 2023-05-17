@@ -10,7 +10,7 @@ export default function Film() {
       </h1> 
 <SearchBar></SearchBar>
             <div className="events">
-                  <Event filter={"Film"}></Event>
+                  <Event filter={"Film"} mode={"card"}></Event>
             </div>
     </div>
   )

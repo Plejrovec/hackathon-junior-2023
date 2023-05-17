@@ -10,7 +10,7 @@ export default function Divadlo() {
       </h1>
       <SearchBar></SearchBar>
             <div className="events">
-                  <Event filter={"Divadlo"}></Event>
+                  <Event filter={"Divadlo"} mode={"card"}></Event>
             </div>
     </div>
   )
