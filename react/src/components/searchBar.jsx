@@ -8,7 +8,6 @@ export default function SearchBar(props) {
         event.preventDefault();
         props.onSearch(query);
     };
-
     const handleInputChange = (event) => {
         setQuery(event.target.value);
     };
