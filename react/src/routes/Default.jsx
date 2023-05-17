@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "../css/default.css";
 import Event from "../components/EventList"; 
-import arrow from "../imgs/arrow.png";
+
 
 export default function Default() {
     const [searchQuery, setSearchQuery] = useState('');
