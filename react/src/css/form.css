@@ -3,6 +3,7 @@
     height:25rem;
     border:2px solid black;
     margin:0 5rem;
+    background-color:#F32BDF;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +20,8 @@ input{
     margin:1rem;
     width:25rem;
     height:1.5rem;
-    border-color: black;
+    border-radius: 2rem;
+    text-align: center;
 }
 .sbt{
     width:5rem;
