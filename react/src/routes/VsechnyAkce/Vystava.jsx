@@ -8,6 +8,7 @@ export default function Vystava() {
   const handleSearch = (query) => {
     setSearchQuery(query);
   };
+  console.log(searchQuery);
   return (
     <div class="container">
       <h1>
