@@ -1,4 +1,5 @@
 import React from 'react'
+import Event from '../../components/Events_default'
 
 export default function Veletrhy_vzdelavaci() {
   return (
@@ -32,6 +33,9 @@ export default function Veletrhy_vzdelavaci() {
                 Levnější vstupy <br /> Všechny vzdělavací akce a veletrhy v Brně pohromadě <br />{" "}
                 Žádné zdlouhavé fronty na papírové vstupenky, více času na prohlídky
             </p>
+            </div>
+            <div className="events">
+                  <Event filter={"Veletrhy / vzdělávací"}></Event>
             </div>
     </div>
   )

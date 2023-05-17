@@ -1,4 +1,5 @@
 import React from 'react'
+import Event from '../../components/Events_default'
 
 export default function Gastronomicke() {
   return (
@@ -32,6 +33,9 @@ export default function Gastronomicke() {
                 Levnější vstupy <br /> Všechny gastronomické akce v Brně pohromadě <br />{" "}
                 Spousta vynikajícího jídla
             </p>
+            </div>
+            <div className="events">
+                  <Event filter={"Gastronomické"}></Event>
             </div>
     </div>
     

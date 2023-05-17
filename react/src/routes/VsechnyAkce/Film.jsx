@@ -1,4 +1,5 @@
 import React from 'react'
+import Event from '../../components/Events_default'
 
 export default function Film() {
   return (
@@ -32,6 +33,9 @@ export default function Film() {
                 Levnější lístky<br /> Všechna filmová promítaní v Brně pohromadě <br />{" "}
                 Žádné zdlouhavé fronty na papírové vstupenky
             </p>
+            </div>
+            <div className="events">
+                  <Event filter={"Film"}></Event>
             </div>
     </div>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import Event from '../../components/Events_default'
 
 export default function Pro_rodiny() {
   return (
@@ -32,6 +33,9 @@ export default function Pro_rodiny() {
                 Levnější vstupy <br /> Všechny akce pro rodiny v Brně pohromadě <br />{" "}
                 Žádné úmorné čekání s dětmi ve frontách
             </p>
+            </div>
+            <div className="events">
+                  <Event filter={"Pro rodiny"}></Event>
             </div>
     </div>
   )

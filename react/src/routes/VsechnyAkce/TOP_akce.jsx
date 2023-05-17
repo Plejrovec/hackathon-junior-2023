@@ -1,4 +1,5 @@
 import React from 'react'
+import Event from '../../components/Events_default'
 
 export default function TOP_akce() {
   return (
@@ -32,6 +33,9 @@ export default function TOP_akce() {
                 Levnější vstupy <br /> Všechny TOP akce v Brně pohromadě <br />{" "}
                 Žádné zdlouhavé fronty na papírové vstupenky
             </p>
+            </div>
+            <div className="events">
+                  <Event filter={"TOP akce"}></Event>
             </div>
     </div>
   )

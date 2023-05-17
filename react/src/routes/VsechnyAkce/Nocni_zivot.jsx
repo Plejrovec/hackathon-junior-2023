@@ -1,4 +1,5 @@
 import React from 'react'
+import Event from '../../components/Events_default'
 
 export default function Nocni_zivot() {
   return (
@@ -32,6 +33,9 @@ export default function Nocni_zivot() {
                 Levnější vstupy <br /> Všechny noční akce v Brně pohromadě <br />{" "}
                 Spousta dobrodružství a zábavy
             </p>
+            </div>
+            <div className="events">
+                  <Event filter={"Noční život"}></Event>
             </div>
     </div>
   )
