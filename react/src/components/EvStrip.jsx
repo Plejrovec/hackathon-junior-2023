@@ -11,7 +11,7 @@ export default function EvStrip(props) {
           <div className="right">
             <div className="top">
               <p dangerouslySetInnerHTML={{ __html: props.event.name }}></p>
-              <button className="btn">Vstupenky<img src={arrow} className="arrow"></img></button>
+              <button className="btn"><p id="vstupenkyTxt">Vstupenky</p><img src={arrow} className="arrow"></img></button>
             </div>
             
             <div className="bottom">
