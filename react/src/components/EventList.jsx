@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../css/event.css";
 import EvStrip from "./EvStrip";
+import EventCard from "./EventCard";
 
 export default function Event(props){
   const [eventData, setEventData] = useState([]);
@@ -43,10 +44,15 @@ export default function Event(props){
     updateEventLocations();
   }, [eventData]);
 
+
+
   return (
     <>
       {eventData.filter((event) => event.categories === props.filter).map((event) => (
-        <EvStrip event={event} />
+        <div>{
+          props.mode === "card" ? <EventCard event={event}></EventCard> : <EvStrip event={event}></EvStrip>  
+          }</div>
+        
       ))}
     </>
   );

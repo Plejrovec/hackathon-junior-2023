@@ -10,7 +10,7 @@ export default function Hudba() {
       </h1> 
      <SearchBar></SearchBar>
             <div className="events">
-                  <Event filter={"Hudba"}></Event>
+                  <Event filter={"Hudba"} mode={"card"}></Event>
             </div>
     </div>
   )

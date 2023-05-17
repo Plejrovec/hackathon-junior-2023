@@ -1,5 +1,6 @@
 import React from 'react'
 import arrow from "../imgs/arrow.png";
+import "../css/event.css";
 
 export default function EvStrip(props) {
   console.log(props.event);
