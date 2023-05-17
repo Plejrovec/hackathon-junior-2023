@@ -18,10 +18,19 @@
     display:flex;
     flex-direction: column;
 }
+.event .top #vstupenkyTxt{
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
 .event .top .arrow{
-    padding-left:0.2rem;
-    width:1.2rem; 
+    position:relative;
+
+    padding-right:0.5rem;
+    width:2rem; 
     height:1rem;
+    justify-content: center;
+    align-items: center;
+
 }
 .event img{
     width:31%;
@@ -45,11 +54,14 @@
     color:white;
 }
 .event .btn{
+    display:flex;
+    background-color: white;
     border: 2px solid black;
     font-weight: bold;
     width:12rem;
     height:2rem;
     margin:1rem;
+    align-items: center;
 }
 .event p{
     font-weight: bold;
