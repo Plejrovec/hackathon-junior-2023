@@ -1,15 +1,20 @@
-import React from 'react'
-
+import React from 'react';
+import "../../css/form.css";
 export default function Form() {
   return (
     <div>
-        <input value="text">Text</input>
-        <input>Kategorie(vyber)</input>
-        <input>Obrazek</input>
-        <input>Datum od</input>
-        <input>Datum do</input>
-        <input>Misto</input>
+        <h2>Akce</h2>
+    <div className='form'>
+        
+        <input placeholder="text"></input>
+        <input placeholder="Kategorie"></input>
+        <input placeholder="Obrazek"></input>
+        <input placeholder="Datum od"></input>
+        <input placeholder="Datum do"></input>
+        <input placeholder="Misto"></input>
+        <a  className="sbt" href="/">Ulozit</a>
 
+    </div>
     </div>
   )
 }

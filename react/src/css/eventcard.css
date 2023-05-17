@@ -51,6 +51,10 @@
     color:white;
    
 }
+.maps{
+    text-decoration: none;
+    color:white;
+}
 .event .btn{
     display:flex;
     background-color: white;
