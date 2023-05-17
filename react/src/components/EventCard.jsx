@@ -9,7 +9,7 @@ export default function EventCard(props) {
             <div className="right">
               <div className="top">
                 <p dangerouslySetInnerHTML={{ __html: props.event.name }}></p>
-                <div className="date">{props.event.date_from}</div>
+               
               </div>
               
               <div className="bottom">
