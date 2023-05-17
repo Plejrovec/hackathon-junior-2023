@@ -48,9 +48,7 @@ export default function Event(props){
   return (
     <>
       {eventData.filter((event) => event.categories === props.filter).map((event) => (
-        <div>{
-          props.mode === "card" ? <EventCard event={event}></EventCard> : <EvStrip event={event}></EvStrip>  
-          }</div>
+        props.mode === "card" ? <EventCard event={event}></EventCard> : <EvStrip event={event}></EvStrip>   
         
       ))}
     </>
