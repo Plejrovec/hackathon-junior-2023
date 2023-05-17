@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Geocodio\Geocodio;
-
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Http;
@@ -15,10 +13,6 @@ class AkceData extends Controller
         
         $myArray = array();
 
-        $geocoder = new Geocodio();
-        $geocoder->setApiKey('f9660e7a684ef446966a4b4400474b7e74f6a9b');
-        $geodata = array();
-
         for ($i = 0; $i < Count($ar); $i++) {
             $d = $ar[$i]['properties'];
             $words = explode(',', $d['categories']);
@@ -28,12 +22,12 @@ class AkceData extends Controller
             $d['categories'] = $words[0];
 
             $timestamp = $d['date_from'] / 1000;
-            $date = date('Y-m-d', strtotime('@' . $timestamp));
+            $date = date('d.m. Y', strtotime('@' . $timestamp));
 
             $d['date_from'] = $date;
 
             $timestamp = $d['date_to'] / 1000;
-            $date = date('Y-m-d', strtotime('@' . $timestamp));
+            $date = date('d.m. Y', strtotime('@' . $timestamp));
 
             $d['date_to'] = $date;
 
@@ -41,12 +35,6 @@ class AkceData extends Controller
 
             $myArray[] = $d;
         }
-
-        // $results = $geocoder->reverse($geodata);
-        // dd($results);
-        // for ($i = 0; $i < Count($results); $i++) {
-        //     $myArray[$i]["Address"] = $results[$i];
-        // }
 
         return $myArray;
     }
