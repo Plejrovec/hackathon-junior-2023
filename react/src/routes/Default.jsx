@@ -10,7 +10,7 @@ export default function Default() {
                 Co se děje v Brně? Všechny akce pohodlně, levněji na jednom
                 místě.
             </h1>
-            <div className="addbutton">
+            <div >
                 <button className="addbtn">
                     Přidej akci
                     &nbsp;&nbsp;
