@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import EvStrip from "./EvStrip";
 import EventCard from "./EventCard";
 
 export default function Event(props){
