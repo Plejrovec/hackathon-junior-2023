@@ -44,14 +44,16 @@ export default function Event(props){
     updateEventLocations();
   }, [eventData]);
 
-
+  const filteredEvents = eventData.filter((event) =>
+  event.name.toLowerCase().includes(searchQuery.toLowerCase())
+);
 
   return (
     <>
       {eventData.filter((event) => event.categories === props.filter).map((event) => (
-        <div>{
-          props.mode === "card" ? <EventCard event={event}></EventCard> : <EvStrip event={event}></EvStrip>  
-          }</div>
+        
+        <EventCard event={event}></EventCard> 
+          
         
       ))}
     </>
