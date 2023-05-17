@@ -10,7 +10,7 @@ export default function EventCard(props) {
             <div className="right">
               <div className="top">
                 <p dangerouslySetInnerHTML={{ __html: props.event.name }}></p>
-                <button className="btn"><p1 id='vstuptext'>Vstupenky &#10132;</p1></button>
+                <div className="date">{props.event.date_from}</div>
               </div>
               
               <div className="bottom">

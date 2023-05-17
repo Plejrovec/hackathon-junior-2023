@@ -8,9 +8,8 @@ export default function Event(props){
   useEffect(() => {
     const fetchData = async () => {
       try {
-        console.log(12);
         const response = await axios.get("http://localhost:8000/api/events");
-        const data = response.data.flat(Infinity);  
+        const data = response.data.flat(Infinity).slice(0,50);  
         setEventData(data);
       } catch (error) {
 
@@ -41,14 +40,18 @@ export default function Event(props){
 
     updateEventLocations();
   }, [eventData]);
-  console.log(props.searchQuery)
-  const filteredEvents = eventData.filter((event) =>
+  
+
+useEffect(()=>{
+  const filteredEvents = props.searchQuery!=""? eventData.filter((event) =>
   event.name.toLowerCase().includes(props.searchQuery.toLowerCase())
-);
-  if(props.searchQuery!= "" ) {
-    filteredEvents.map(event => console.log(event));
-  }
+):[];
+  console.log(filteredEvents);
+  setEventData(filteredEvents);
+},[props.searchQuery]);
+console.log(props.searchQuery);
   if(props.filter=="") {
+
     return (
       <>
       {eventData.map(event =>(
