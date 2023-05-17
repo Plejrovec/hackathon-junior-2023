@@ -11,7 +11,7 @@ class AkceData extends Controller
     public function GetAkceData() { // Has to be withoutVerifying because it thinks it has invalid ssl
         $ar = Http::withoutVerifying()->get('https://services6.arcgis.com/fUWVlHWZNxUvTUh8/arcgis/rest/services/Events/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson')->json()['features'];
         
-        
+        $apiKey = "AIzaSyAK7PSYID6RF8xxyKp6n4PX80vuqArD_QA"; // Replace with your Google Maps Geocoding API key
 
         $myArray = array();
 
@@ -32,6 +32,10 @@ class AkceData extends Controller
             $date = date('Y-m-d', strtotime('@' . $timestamp));
 
             $d['date_to'] = $date;
+
+            $response = Http::withoutVerifying()->get("https://maps.googleapis.com/maps/api/geocode/json?latlng=".$d['latitude'].",".$d['longitude']."&key=".$apiKey)->json();
+            
+            $d["Address"] = $response;
 
             $myArray[] = $d;
         }
