@@ -14,7 +14,7 @@ export default function EventCard(props) {
               
               <div className="bottom">
                 <div className="date"><img className='cal' src={cal}></img> {props.event.date_from + "" + props.event.date_to}</div>
-                <div className="location">{" "}</div>
+                <div className="location"><a className='maps' href={props.event.Address}>Google mapy</a></div>
                 
               </div>
             </div>

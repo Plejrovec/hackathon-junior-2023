@@ -31,7 +31,7 @@ class AkceData extends Controller
 
             $d['date_to'] = $date;
 
-            $geodata[] = [$d['latitude'], $d['longitude']];
+            $d["Address"] = "http://www.google.com/maps/place/".$d['latitude'].",".$d['longitude']."";
 
             $myArray[] = $d;
         }
