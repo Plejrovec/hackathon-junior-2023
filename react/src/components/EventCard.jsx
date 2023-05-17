@@ -1,7 +1,8 @@
 import React from 'react';
-
+import arrow from "../imgs/arrow.png";
 import "../css/eventcard.css";
 export default function EventCard(props) {
+    console.log(props.event);
     return (
       <div className="event" key={props.event.ID}>
             <div className="items">
@@ -9,13 +10,13 @@ export default function EventCard(props) {
             <div className="right">
               <div className="top">
                 <p dangerouslySetInnerHTML={{ __html: props.event.name }}></p>
-                <div className="date">{props.event.date_from + " " + props.event.date_to}</div>
+                
               </div>
               
               <div className="bottom">
-                
-                <button className='btn'>Informace</button>
-                <button className="btn">Vstupenky</button>
+                <div className="date">&#128197; {props.event.date_from + " " + props.event.date_to}</div>
+                <div className="location">{" "}</div>
+                <button className="btn"><p1 id='vstuptext'>Vstupenky &#10132;</p1></button>
               </div>
             </div>
             </div>
