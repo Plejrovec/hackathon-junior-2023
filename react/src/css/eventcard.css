@@ -7,6 +7,19 @@
     overflow-x: hidden;
      
 }
+
+.events::-webkit-scrollbar {
+    width: 5px;
+  }
+  .events::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .events::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  .events::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 .event{
     display:flex;
     flex-direction:column;
