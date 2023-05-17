@@ -107,3 +107,7 @@ body {
 .mainname{
     font-size: 3rem;
 }
+.HEAD{
+    margin:0;
+    padding: 0;
+}
