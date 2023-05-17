@@ -2,7 +2,7 @@ import React from 'react';
 import "../../css/form.css";
 export default function Form() {
   return (
-    <div>
+    <div className='form-container'>
         <h2>Akce</h2>
     <div className='form'>
         

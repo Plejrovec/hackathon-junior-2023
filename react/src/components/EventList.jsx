@@ -10,7 +10,7 @@ export default function EventList(props) {
     const fetchData = async () => {
       try {
         const response = await axios.get("http://localhost:8000/api/events");
-        const data = response.data.flat(Infinity).slice(1, 50);
+        const data = response.data.flat(Infinity).slice(1,200);
         setEventData(data);
       } catch (error) {
         console.error(error);

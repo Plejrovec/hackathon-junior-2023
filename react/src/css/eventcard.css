@@ -29,8 +29,10 @@
     height:1rem;
 }
 .event img{
-    width:31%;
+    min-width: 9rem;
+    width:9rem;
     height:9rem;
+    object-fit: cover;
 }
 .event .right{
     background-color: white;
