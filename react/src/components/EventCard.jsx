@@ -1,7 +1,8 @@
 import React from 'react';
-
+import cal from "../imgs/icons8-calendar-24.png"
 import "../css/eventcard.css";
 export default function EventCard(props) {
+    console.log(props.event);
     return (
       <div className="event" key={props.event.ID}>
             <div className="items">
@@ -13,9 +14,9 @@ export default function EventCard(props) {
               </div>
               
               <div className="bottom">
+                <div className="date"><img className='cal' src={cal}></img> {props.event.date_from + "" + props.event.date_to}</div>
+                <div className="location">{" "}</div>
                 
-                <button className='btn'>Informace</button>
-                <button className="btn">Vstupenky</button>
               </div>
             </div>
             </div>

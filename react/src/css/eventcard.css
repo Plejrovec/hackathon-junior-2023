@@ -1,53 +1,65 @@
 .events{
-    display:flex;
+    display: flex;
     flex-direction: column;
     overflow: scroll;
-    flex-wrap: wrap;
+    
     max-width: 100%;
     overflow-x: hidden;
-    scrollbar-color: none   
+     
 }
 .event{
-    
-    width:33.3%;
+    display:flex;
+    flex-direction:column;
+    width:100%;
     padding:1rem;
     
 }
 .event .items{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+.event .top #vstuptext{
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
     
 }
 
-
+.event .cal{
+    width:1rem;
+    height:1rem;
+}
 .event img{
-    width:100%;
+    width:31%;
     height:9rem;
 }
 .event .right{
-    background-color: red;
-    height:15rem;
+    background-color: white;
+    
 }
 .event .top{
     height: 4.8rem;
     display:flex;
-    flex-direction:column;
+    flex-direction:row ;
+    
    
 }
 .event .bottom{
     background-color: red;
     height:4.2rem;
     display:flex;
-    bottom:0;
     flex-direction:row ;
     color:white;
+   
 }
 .event .btn{
+    display:flex;
+    background-color: white;
     border: 2px solid black;
     font-weight: bold;
     width:15rem;
     height:2rem;
     margin:1rem;
+    align-items: center;
 }
 .event p{
     font-weight: bold;
@@ -56,5 +68,7 @@
    
 }
 .event .date, .location{
-    text-align: center;
+    text-align: left;
+    margin-left:2rem;
+    margin-top:1rem;
 }

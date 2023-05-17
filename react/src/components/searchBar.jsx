@@ -31,7 +31,7 @@ export default function SearchBar(props) {
                 <input
                     type="search"
                     id='search'
-                    placeholder='Název představení'
+                    placeholder='Název akce'
                     value={query}
                     onChange={handleInputChange}
                 />
