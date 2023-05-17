@@ -61,6 +61,13 @@
     margin:1rem;
     align-items: center;
 }
+.event .btn:hover{
+    opacity:.5;
+    
+}
+.event .btn:active{
+    opacity:1.5;
+}
 .event p{
     font-weight: bold;
     font-size: 20px;
