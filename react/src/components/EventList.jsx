@@ -46,10 +46,8 @@ useEffect(()=>{
   const filteredEvents = props.searchQuery!=""? eventData.filter((event) =>
   event.name.toLowerCase().includes(props.searchQuery.toLowerCase())
 ):[];
-  console.log(filteredEvents);
   setEventData(filteredEvents);
 },[props.searchQuery]);
-console.log(props.searchQuery);
   if(props.filter=="") {
 
     return (
