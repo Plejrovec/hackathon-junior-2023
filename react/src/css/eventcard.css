@@ -1,6 +1,6 @@
 .events{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     overflow: scroll;
     flex-wrap: wrap;
     max-width: 100%;
