@@ -51,7 +51,7 @@ export default function Default() {
             </div>
            
             <div className="events">
-                  <Event filter={"all"} searchQuery={searchQuery}></Event>
+                  <Event filter={""} searchQuery={searchQuery}></Event>
             </div>
         </div>
     );

@@ -48,6 +48,15 @@ export default function Event(props){
   if(props.searchQuery!= "" ) {
     filteredEvents.map(event => console.log(event));
   }
+  if(props.filter=="") {
+    return (
+      <>
+      {eventData.map(event =>(
+        <EventCard event={event}></EventCard>
+      ))}
+        </>
+    )
+    }else{
   return (
     <>
       {eventData.filter((event) => event.categories === props.filter).map((event) => (
@@ -57,7 +66,7 @@ export default function Event(props){
         
       ))}
     </>
-  );
+  )};
 };
 
 
