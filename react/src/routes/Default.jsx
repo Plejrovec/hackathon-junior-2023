@@ -16,11 +16,11 @@ export default function Default() {
                 místě.
             </h1>
             <div >
-                <button className="addbtn">
+                <a className="addbtn" href={"/Form"}>
                     Přidej akci
                     &nbsp;&nbsp;
                     &#10132;
-                </button>
+                </a>
             </div>
             <div className="top-bar">
                 <h3>Výhody</h3>

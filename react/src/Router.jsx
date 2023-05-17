@@ -15,8 +15,9 @@ import Nocni_zivot from "./routes/VsechnyAkce/Nocni_zivot";
 import TOP_akce from "./routes/VsechnyAkce/TOP_akce";
 import Festivaly from "./routes/VsechnyAkce/Festivaly";
 import Gastronomicke from "./routes/VsechnyAkce/Gastronomicke";
+import Form from "./routes/VsechnyAkce/Form";
 
-import Default from "./routes/default";
+import Default from "./routes/Default";
 
 
 const router = createBrowserRouter([
@@ -71,6 +72,10 @@ const router = createBrowserRouter([
       {
         path: "Gastronomicke",
         element: <Gastronomicke />,
+      },
+      {
+        path: "Form",
+        element:<Form/>,
       }
     ]
   },
