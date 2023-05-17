@@ -5,7 +5,7 @@ export default function EventCard(props) {
     return (
       <div className="event" key={props.event.ID}>
             <div className="items">
-            <img src={props.event.image} alt="" />
+            <img src={props.event.image} alt="" className='img'/>
             <div className="right">
               <div className="top">
                 <p dangerouslySetInnerHTML={{ __html: props.event.name }}></p>
