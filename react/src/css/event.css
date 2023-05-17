@@ -16,14 +16,14 @@
 }
 .event img{
     width:31%;
-    height:8rem;
+    height:9rem;
 }
 .event .right{
     background-color: white;
     
 }
 .event .top{
-    height: 3.8rem;
+    height: 4.8rem;
     display:flex;
     flex-direction:row ;
    

@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/default.css";
 import Event from "../components/EventList"; 
+import arrow from "../imgs/arrow.png";
 
 export default function Default() {
     return (
@@ -9,6 +10,13 @@ export default function Default() {
                 Co se děje v Brně? Všechny akce pohodlně, levněji na jednom
                 místě.
             </h1>
+            <div className="addbutton">
+                <button className="addbtn">
+                    Přidej akci
+                    &nbsp;&nbsp;
+                    &#10132;
+                </button>
+            </div>
             <div className="top-bar">
                 <h3>Výhody</h3>
                 <div className="search">
